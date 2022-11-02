@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -7,12 +8,18 @@ const Navbar = () => {
         <img src="/image/ae-logo-svg.svg" alt="" />
       </div>
       <nav>
-        <a href="/index.html" className="active">
+        <Link to={'/'} className="active">
           Home
-        </a>
-        <a href="/about.html">About</a>
-        <a href="/project.html">Project</a>
-        <a href="/blog.html">Blog</a>
+        </Link>
+        <Link to={'/about'} className="active">
+          About
+        </Link>
+        <Link to={'/'} className="active">
+          Blog
+        </Link>
+        <Link to={'/'} className="active">
+          project
+        </Link>
       </nav>
     </header>
   );
