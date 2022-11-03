@@ -10,7 +10,7 @@ import './home.css';
 const Home = () => {
   return (
     <>
-      <Layout theme={'white'}>
+      <Layout theme={'light'}>
         <section className="hero">
           <div className="box-hero">
             <h1 className="hero-text">
