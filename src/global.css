@@ -40,6 +40,22 @@ header nav a{
 header.dark nav a{
     color: #fff;
 }
+header .nav-sm{
+    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 20px;
+    position: absolute;
+}
+header .nav-sm a{
+    text-decoration: none;
+    color: #000;
+    font-family: var(--roboto);
+}
+header.dark .nav-sm a{
+    color: #fff;
+}
 .white{
     color: #fff;
 }
@@ -109,7 +125,8 @@ footer .box-footer .page a{
     color: #fff;
 }
 footer .box-footer nav{
-    width: 50%;
+    max-width: 400px;
+    min-width: 200px;
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -132,3 +149,10 @@ footer .box-footer nav{
     color: #fff;
     background-color: #0F0F0F;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .nav-xl{
+        display: hidden;
+    }
+  }

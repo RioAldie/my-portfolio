@@ -17,11 +17,14 @@ section.hero .box-hero{
     align-items: center;
     position: relative;
     top: -100px;
+   
+  
 }
 section.hero .box-hero .hero-text{
     font-family: var(--oswald);
-    font-size: 144px;
+    font-size: 104px;
     font-weight: 200;
+    margin-left: 20px;
 }
 section.hero .box-hero .sub-hero{
     font-family: var(--playfair);
@@ -30,6 +33,7 @@ section.hero .box-hero .sub-hero{
     padding-left: 50px;
     color: #0F0F0F;
     margin-top: 20px;
+    box-sizing: border-box;
 }
 section.hero .hero-buttons{
     display: flex;
@@ -38,11 +42,11 @@ section.hero .hero-buttons{
     width: 420px;
     position: relative;
     top: -100px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 section.hero .hero-buttons .btn-email{
-    width: 200px;
-    height: 45px;
+    width: 150px;
+    height: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -53,13 +57,13 @@ section.hero .hero-buttons .btn-email{
     color: #000;
     font-family: var(--playfair);
     font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 20px;
     transition: 0.6s;
 }
 section.hero .hero-buttons .btn-download{
-    width: 200px;
-    height: 45px;
+    width: 150px;
+    height: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -70,8 +74,8 @@ section.hero .hero-buttons .btn-download{
     color: #ECECEC;
     font-family: var(--playfair);
     font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 20px;
     transition: 0.6s;
 }
 section.hero .hero-buttons .btn-email:hover{

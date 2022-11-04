@@ -19,7 +19,7 @@ const Home = () => {
             <img src="./asset/line.svg" alt="" />
             <h4 className="sub-hero">Javascript Website Developer</h4>
           </div>
-          <div className="hero-buttons">
+          <div className=" hero-buttons ">
             <ButtonEmail />
             <ButtonDownload />
           </div>
