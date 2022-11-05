@@ -1,0 +1,224 @@
+:root{
+    --roboto: 'Roboto', sans-serif;
+    --oswald: 'Oswald', sans-serif;
+    --playfair: 'Playfair Display', serif;
+}
+body#about{
+    background: #0F0F0F;
+}
+.about-bg{
+    font-family: var(--oswald);
+    font-size: 312px;
+    font-weight: 100;
+    color: #ececec1b;
+    background: #0F0F0F;
+    position: fixed;
+    right: 50px;
+    top: 50px;
+    opacity: 0.2;
+    z-index: 10;
+}
+section.about{
+    width: 100%;
+    height: 100vh;
+    background: #0F0F0F;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 100px;
+}
+
+section.about .about-hero{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    z-index: 1000;
+    margin-left: 100px;
+}
+.about-hero .about-sub-text{
+    font-size: 28px;
+    font-weight: 400;
+    max-width: 600px;
+    min-width: 400px;
+    font-family: var(--roboto);
+    color: #FF6C6C;
+}
+.about-hero .about-main-text{
+    color: #fff;
+    max-width: 600px;
+    min-width: 400px;
+    font-style: 500;
+    font-weight: 200;
+    font-size: 47px;
+    line-height: 54px;
+    font-family: var(--roboto);
+    position: relative;
+}
+.about-hero .about-body-text{
+    color: #fff;
+    font-family: var(--roboto);
+    max-width: 600px;
+    min-width: 300px;
+    min-height: 100px;
+    max-height: max-content;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ECECEC;
+}
+.box-social-media-row{
+    position: static;
+    max-width: 60%;
+    min-width: 50%;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.box-social-media-row p{
+    color: #fff;
+    font-family: var(--roboto);
+    font-size: 18px;
+}
+.box-social-media-row nav{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 400px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ball-red{
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+}
+section.tool{
+    width: 100%;
+    height: max-content;
+    background: #0F0F0F;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    
+}
+section.tool .tool-container{
+    width: 80%;
+    min-height: 100px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 40px;
+    box-sizing: border-box;
+    z-index: 1000;
+    margin-left: 100px;
+    flex-wrap: wrap;
+}
+.tool .tool-path{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: var(--roboto);
+    color: #fff;
+    position: relative;
+    text-align: center;
+    
+}
+.tool-container .tool-box{
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    min-height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 50px;
+    transition: 1s;
+    cursor: pointer;
+}
+.tool-container .tool-box:hover .tool-name{
+    color: #FF6C6C;
+}
+.tool-container .tool-box img{
+    width: 40px;
+    height: 40px;
+    color: #ECECEC;
+}
+.tool-container .tool-box .tool-name{
+    color: #ECECEC;
+    width: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: var(--roboto);
+    transition: 1s;
+}
+.a-next{
+    position: absolute;
+    margin-top: 200px;
+    box-sizing: border-box;
+    z-index: 100000;
+}
+.next-project{
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    left: 500px;
+    bottom: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: var(--roboto);
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    font-weight: 200;;
+    box-sizing: border-box;
+    transition: 1s;
+}
+.next-project:hover {
+    color: #FF6C6C;
+}
+.next-project:hover img{
+    transform: translateX(100px);
+    opacity: 0;
+}
+.next-project img{
+    width: 30px;
+    height: 30px;
+    transition: 1s;
+}
+@media screen and (max-width: 600px) {
+    section.about .about-hero{
+        margin-left: 10px;
+    }
+    .about-hero .about-sub-text{
+        max-width: 400px;
+    }
+    .about-hero .about-body-text{
+        max-width: 400px;
+    }
+    .about-hero .about-main-text{
+        max-width: 400px;
+    }
+    .about-bg{
+        display: none;
+    }
+    section.tool .tool-container{
+        margin-left: 0px;
+        width: 400px;
+        flex-direction: column;
+        max-height: max-content;
+     
+    }
+  }
