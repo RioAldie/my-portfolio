@@ -7,10 +7,8 @@ import IntroAbout from './intro.about';
 const About = () => {
   return (
     <>
-      <Layout theme={'dark'}>
+      <Layout theme={true}>
         <IntroAbout />
-        <SkillsBox />
-
         <a href="./project.html" className="a-next">
           <div className="next-project">
             Projects <img src="/image/arrow-right-white.svg" alt="" />

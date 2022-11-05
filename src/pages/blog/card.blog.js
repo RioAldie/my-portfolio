@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const BlogCard = ({ title, _id, date }) => {
   return (
-    <div className="blog-card">
-      <Link to={`/blog/${_id}`}>
+    <div className="border border-grey blog-card">
+      <Link to={`/blog/${_id}`} className=" text-dark">
         <p className="title">{title}</p>
       </Link>
       <p className="date">{date}</p>

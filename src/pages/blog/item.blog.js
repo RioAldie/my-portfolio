@@ -33,13 +33,18 @@ const BlogItem = () => {
   });
 
   return (
-    <Layout theme={'light'}>
+    <Layout theme={false}>
       <section className="blog">
         <div className="path-title">Writing Blog</div>
         <article>
           <div className="blog-title">{blog.title}</div>
           <AuthorBlog props={blog.author} />
-          <img src={`/image/${blog.thumbnail}`} alt="" />
+          <img
+            src={`/image/${blog.thumbnail}`}
+            className="image-thumbnail"
+            alt=""
+            width={400}
+          />
           <div
             className="content"
             dangerouslySetInnerHTML={{ __html: blog.content }}></div>

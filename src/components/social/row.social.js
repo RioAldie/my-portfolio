@@ -3,7 +3,6 @@ import React from 'react';
 const SocialsRow = () => {
   return (
     <div className="box-social-media-row">
-      <p>Find me :</p>
       <nav>
         <a
           href="https://github.com/RioAldie"

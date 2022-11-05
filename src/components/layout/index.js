@@ -5,7 +5,7 @@ import Navbar from './navbar';
 const Layout = ({ children, theme }) => {
   console.log(theme);
   return (
-    <div className={theme}>
+    <div className={theme ? 'dark' : 'light'}>
       <Navbar theme={theme} />
       <div>{children}</div>
       <Footer />

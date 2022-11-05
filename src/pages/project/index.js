@@ -7,9 +7,11 @@ import CardProject from './card.project';
 const Project = () => {
   return (
     <>
-      <Layout theme={'dark'}>
+      <Layout theme={true}>
         <section className="project">
-          <div className="project-path">Selected Projects</div>
+          <div className="w-75 start project-path">
+            Selected Projects
+          </div>
           {dataProject.map((project, i) => {
             const { title, image, link, tools } = project;
             return (

@@ -11,7 +11,7 @@ section.project{
     min-height: 100vh;
     background: #0D0D0D;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
     align-items: center;
@@ -24,9 +24,8 @@ section.project{
     font-weight: 600;
     font-family: var(--roboto);
     color: #fff;
-    position: absolute;
-    left: 150px;
-    top: 200px;
+    position: relative;
+    
 }
 section.project .card-project{
     width: 900px;
@@ -65,10 +64,10 @@ section.project .card-project .project-img img{
     justify-content: flex-start;
     
 }
-.card-project .project-detail .project-navs a{
+ .project-navs a{
     color: #c4c4c4;
 }
-.project-detail .project-navs .nav{
+.project-navs .nav{
     width: 150px;
     height: 30px;
     font-size: 16px;
@@ -83,7 +82,7 @@ section.project .card-project .project-img img{
 .nav:hover{
     color: #fff;
 }
-.project-detail .project-navs .nav img{
+ .project-navs .nav img{
     width: 20px;
     height: 20px;
 }
@@ -176,4 +175,17 @@ section.contact{
 .contact-container .box-buttons .btn-download:hover{
     transform: scale(1);
     background: #201F1F;
+}
+@media screen and (max-width: 600px) {
+     section.project .card-project{
+        max-width: 400px;
+        max-height: 600px;
+        justify-content: space-between;
+        margin-top: 0;
+     }
+     
+     .project-img{
+        width: 400px;
+        height: 100px;
+     }
 }

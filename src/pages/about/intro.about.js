@@ -3,13 +3,13 @@ import SocialsRow from '../../components/social/row.social';
 
 const IntroAbout = () => {
   return (
-    <section className="about">
+    <section className="w-100 about ">
       <div className="about-bg">rioaldie</div>
-      <div className="about-hero">
+      <div className=" about-hero">
         <p className="about-sub-text">Hi there, I'm Rio Aldi</p>
         <p className="about-main-text">React Javascript Developer</p>
         <p className="about-body-text">
-          {`
+          {` 
             I’m from Indonesia and have been studying Web Development
             Especially Javascript for more than 2 years. I’ve Learned
             React Roadmaps like Lifecycle, React-Hooks, Advanced
