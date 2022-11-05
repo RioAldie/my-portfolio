@@ -20,6 +20,7 @@ const BlogItem = () => {
   const getBlog = () => {
     blogs.map((blog) => {
       if (blog._id === params.id) return setBlog(blog);
+      return <div>Blog Kosong</div>;
     });
     return null;
   };

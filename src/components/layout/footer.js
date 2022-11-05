@@ -21,7 +21,10 @@ const Footer = () => {
       <div className="box-footer">
         <p>Find me :</p>
         <nav>
-          <a href="https://github.com/RioAldie" target="_blank">
+          <a
+            href="https://github.com/RioAldie"
+            target="_blank"
+            rel="noreferrer">
             <img
               src="/image/github-icon-white.svg"
               alt="github-icon"
@@ -29,13 +32,17 @@ const Footer = () => {
           </a>
           <a
             href="https://www.instagram.com/rioaldie/"
-            target="_blank">
+            target="_blank"
+            rel="noreferrer">
             <img
               src="/image/instagram-white.svg"
               alt="instagram-icon"
             />
           </a>
-          <a href="https://wa.me/+62895702695858" target="_blank">
+          <a
+            href="https://wa.me/+62895702695858"
+            target="_blank"
+            rel="noreferrer">
             <img
               src="/image/whatsapp-white.svg"
               alt="whatsapp-icon"
@@ -43,7 +50,8 @@ const Footer = () => {
           </a>
           <a
             href="https://www.linkedin.com/in/rio-aldi-erwanto-44376820b/"
-            target="_blank">
+            target="_blank"
+            rel="noreferrer">
             <img
               src="/image/linkedin-white.svg"
               alt="linkedin-icon"

@@ -57,12 +57,16 @@ const blogs = [
         </ul>
     </p>
     <br/>
-    <img src="/image/tipe-data.png" alt="primitf-pic">
+    <div className="image">
+    <img src="/image/tipe-data.png" className="image-thumbnail" alt="primitf-pic" width="300">
+    </div>
     <br/>
     <br/>
-    <p>NonPrimitf adalah tipe data yang didefinisikan sendiri oleh programer dan bisanya lebih dari satu nilai,tipe data primitf di Javascript ada dua yaitu Array dan Object</p>
+    NonPrimitf adalah tipe data yang didefinisikan sendiri oleh programer dan bisanya lebih dari satu nilai,tipe data primitf di Javascript ada dua yaitu Array dan Object
     <br/>
-    <img src="/image/nonprimitif.png" alt="non-primitif-pic" width="600" height="400">
+    <div className="image">
+    <img src="/image/nonprimitif.png" className="image-thumbnail" alt="non-primitif-pic" width="300">
+    </div>
       </div>`,
   },
 ];
