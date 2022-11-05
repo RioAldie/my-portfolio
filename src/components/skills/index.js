@@ -3,7 +3,9 @@ import React from 'react';
 const SkillsBox = () => {
   return (
     <section className="tool">
-      <div className="tool-path">Skills and Frameworks</div>
+      <div className="w-50 start tool-path">
+        Skills and Frameworks
+      </div>
       <div className="tool-container">
         <div className="tool-box">
           <img src="/image/html.png" alt="html" />

@@ -9,13 +9,19 @@ section.blog{
     box-sizing: border-box;
     height: max-content;
     display: flex;
+    justify-self: center;
+    align-self: center;
     justify-content: start;
     align-items: center;
     flex-direction: column;
-   margin-bottom: 200px;
+    margin-bottom: 200px;
+
+}
+.content{
+    width: 90%;
 }
 article{
-    width: 800px;
+    width: 90%;
     min-height: 100vh;
     padding-top: 50px;
 }
@@ -28,28 +34,35 @@ article .blog-title{
 }
 article .blog-author{
     width: 220px;
-    height: 50px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
     margin-bottom: 100px;
+    margin-top: 50px;
+
 }
 article .blog-author .detail{
     display: flex;
+    height: 50px;
     flex-direction: column;
+    justify-content: center;
+ 
 }
 article .blog-author img{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 article .blog-author .author-name{
     width: 150px;
     font-size: 18px;
+    height: 20px;
     font-weight: 400;
     font-family: var(--roboto);
     color: #000;
+    margin-top: 10px;
 }
 article .blog-author .date-upload{
     font-size: 16px;
@@ -57,6 +70,7 @@ article .blog-author .date-upload{
     font-weight: 400;
     font-family: var(--roboto);
     color: #bfbfbf;
+    height: 20px;
 }
 article .content{
     font-family: var(--roboto);
@@ -71,6 +85,15 @@ article .content{
     flex-direction: column;
     align-items: center;
 
+}
+article .image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+article .image img{
+    width: 600px;
 }
 h4{
     width: 100%;
@@ -172,5 +195,8 @@ h4{
     }
     .blog-card{
         width: 90%;
+    }
+    article .image img{
+        width: 300px;
     }
 }

@@ -39,12 +39,14 @@ const BlogItem = () => {
         <article>
           <div className="blog-title">{blog.title}</div>
           <AuthorBlog props={blog.author} />
-          <img
-            src={`/image/${blog.thumbnail}`}
-            className="image-thumbnail"
-            alt=""
-            width={400}
-          />
+          <div className="image">
+            <img
+              src={`/image/${blog.thumbnail}`}
+              className="image-thumbnail"
+              alt=""
+            />
+          </div>
+
           <div
             className="content"
             dangerouslySetInnerHTML={{ __html: blog.content }}></div>

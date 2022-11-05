@@ -107,7 +107,7 @@ section.contact{
     background-size: cover;
 }
 .contact-container{
-    width: 900px;
+    width: 60%;
     height: 311px;
     background: #0000004A;
     border-radius: 18px;
@@ -187,5 +187,24 @@ section.contact{
      .project-img{
         width: 400px;
         height: 100px;
+     }
+     .contact-container{
+        width: 90%;
+     }
+     .contact-container .box-buttons{
+        flex-direction: row-reverse;
+        justify-content: center;
+     }
+     .contact-container .box-buttons .btn-email{
+        transform: scale(0.7);
+        margin: 0;
+     }
+     .contact-container .box-buttons .btn-download{
+        transform: scale(0.7);
+        margin: 0;
+     }
+     .contact-container p{
+        font-size: 28px;
+        text-align: center;
      }
 }

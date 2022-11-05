@@ -29,13 +29,17 @@ const Project = () => {
           <div className="contact-container">
             <p>Interest working with me ?</p>
             <div className="box-buttons">
-              <a href="mailto:rioaldierwanto@gmail.com">
+              <a
+                href="mailto:rioaldierwanto@gmail.com"
+                className="text-decoration-none">
                 <div className="btn-email">
                   Lest Talk
                   <img src="/image/mug-coffe-icon.svg" alt="cofee" />
                 </div>
               </a>
-              <a href="https://drive.google.com/file/d/1GwU2cf74WQ2nRZX5lsxeumKtsI9p-FBX/view?usp=sharing">
+              <a
+                href="https://drive.google.com/file/d/1GwU2cf74WQ2nRZX5lsxeumKtsI9p-FBX/view?usp=sharing"
+                className="text-decoration-none">
                 <div className="btn-download">
                   Download CV
                   <img src="/image/download.svg" alt="download" />

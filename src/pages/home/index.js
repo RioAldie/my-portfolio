@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   ButtonDownload,
   ButtonEmail,
@@ -25,11 +26,11 @@ const Home = () => {
           </div>
         </section>
         <SocialBar />
-        <a href="/about.html">
+        <Link to="/about">
           <div className="next">
             About <img src="/image/arrow-right.svg" alt="" />
           </div>
-        </a>
+        </Link>
         <div className="ball">
           <img src="/image/ball.svg" alt="ball" />
         </div>

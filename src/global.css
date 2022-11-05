@@ -155,4 +155,8 @@ footer .box-footer nav{
     .nav-xl{
         display: hidden;
     }
+    footer{
+        padding-top: 50px;
+        box-sizing: border-box;
+    }
   }

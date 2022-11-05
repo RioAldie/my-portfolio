@@ -74,8 +74,8 @@ section.about .about-hero{
 }
 .box-social-media-row{
     position: static;
-    max-width: 500px;
-    min-width: 400px;
+    max-width: 60%;
+    min-width: 50%;
     justify-content: flex-end;
     display: flex;
     flex-direction: row;
@@ -101,18 +101,17 @@ section.about .about-hero{
 }
 section.tool{
     width: 100%;
-    height: 100vh;
+    height: max-content;
     background: #0F0F0F;
     display: flex;
     justify-content: start;
     align-items: flex-start;
     flex-direction: column;
     padding: 0;
-    margin-top: 200px;
     
 }
 section.tool .tool-container{
-    width: 800px;
+    width: 80%;
     min-height: 100px;
     max-height: 600px;
     display: flex;
@@ -129,7 +128,9 @@ section.tool .tool-container{
     font-weight: 600;
     font-family: var(--roboto);
     color: #fff;
-    margin-left: 150px;
+    position: relative;
+    text-align: center;
+    
 }
 .tool-container .tool-box{
     display: flex;
@@ -161,10 +162,11 @@ section.tool .tool-container{
     font-family: var(--roboto);
     transition: 1s;
 }
-a.a-next{
+.a-next{
     position: absolute;
     margin-top: 200px;
     box-sizing: border-box;
+    z-index: 100000;
 }
 .next-project{
     position: absolute;
@@ -211,5 +213,12 @@ a.a-next{
     }
     .about-bg{
         display: none;
+    }
+    section.tool .tool-container{
+        margin-left: 0px;
+        width: 400px;
+        flex-direction: column;
+        max-height: max-content;
+     
     }
   }

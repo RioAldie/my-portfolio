@@ -3,17 +3,19 @@ import Layout from '../../components/layout';
 import SkillsBox from '../../components/skills';
 import './about.css';
 import IntroAbout from './intro.about';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
     <>
       <Layout theme={true}>
         <IntroAbout />
-        <a href="./project.html" className="a-next">
+        <SkillsBox />
+        <Link to="/project" className="a-next">
           <div className="next-project">
             Projects <img src="/image/arrow-right-white.svg" alt="" />
           </div>
-        </a>
+        </Link>
         <div className="ball-red">
           <img src="/image/ball-red.svg" alt="" />
         </div>
