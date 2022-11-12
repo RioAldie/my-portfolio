@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const Navbar = ({ theme }) => {
   const style = {
@@ -71,5 +72,7 @@ const Navbar = ({ theme }) => {
     </nav>
   );
 };
-
+Navbar.propTypes = {
+  theme: PropTypes.bool,
+};
 export default Navbar;

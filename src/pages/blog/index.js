@@ -5,7 +5,6 @@ import './blog.css';
 import BlogCard from './card.blog';
 
 const Blog = () => {
-  console.log('blog=>', blogs);
   return (
     <Layout>
       <section className="blog">

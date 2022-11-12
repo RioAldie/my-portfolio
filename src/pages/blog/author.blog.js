@@ -1,7 +1,6 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 const AuthorBlog = ({ props }) => {
-  console.log(props);
   const { name, image, date } = props;
   return (
     <div className="blog-author">
@@ -14,4 +13,7 @@ const AuthorBlog = ({ props }) => {
   );
 };
 
+AuthorBlog.propTypes = {
+  props: PropTypes.object,
+};
 export default AuthorBlog;

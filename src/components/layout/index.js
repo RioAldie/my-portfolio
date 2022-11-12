@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Footer from './footer';
 import Navbar from './navbar';
 
@@ -13,4 +14,8 @@ const Layout = ({ children, theme }) => {
   );
 };
 
+Layout.propTypes = {
+  children: PropTypes.element,
+  theme: PropTypes.bool,
+};
 export default Layout;

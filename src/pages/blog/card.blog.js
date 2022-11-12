@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const BlogCard = ({ title, _id, date }) => {
@@ -12,4 +13,9 @@ const BlogCard = ({ title, _id, date }) => {
   );
 };
 
+BlogCard.propTypes = {
+  title: PropTypes.string,
+  _id: PropTypes.string,
+  date: PropTypes.string,
+};
 export default BlogCard;

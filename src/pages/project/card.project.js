@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const CardProject = ({ title, image, link, tools }) => {
   return (
@@ -24,7 +25,7 @@ const CardProject = ({ title, image, link, tools }) => {
             Study Case
           </div>
           <a
-            href="https://getmovie-rioaldie.vercel.app/"
+            href={link}
             target="_blank"
             rel="noreferrer"
             className="text-decoration-none">
@@ -39,4 +40,10 @@ const CardProject = ({ title, image, link, tools }) => {
   );
 };
 
+CardProject.propTypes = {
+  title: PropTypes.string,
+  link: PropTypes.string,
+  image: PropTypes.string,
+  tools: PropTypes.string,
+};
 export default CardProject;
