@@ -11,12 +11,12 @@ const About = () => {
       <Layout theme={true}>
         <IntroAbout />
         <SkillsBox />
-        <Link to="/project" className="a-next">
+        <Link to="/project" className="a-next d-none d-md-block">
           <div className="next-project">
             Projects <img src="/image/arrow-right-white.svg" alt="" />
           </div>
         </Link>
-        <div className="ball-red">
+        <div className="ball-red d-none d-md-block">
           <img src="/image/ball-red.svg" alt="" />
         </div>
       </Layout>
